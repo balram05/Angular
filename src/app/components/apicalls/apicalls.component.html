@@ -1,0 +1,9 @@
+<p>apicalls works!</p>
+<button (click)="getData()">get data</button>
+<br>
+<select>
+    @for(item of getUsers;track item.id ){
+    <option>{{item.email}}</option>
+    }
+</select>
+

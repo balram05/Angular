@@ -1,0 +1,19 @@
+.hello{
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 30px;
+}
+.two{
+    font-style: italic;
+    /* font-weight: bold; */
+}
+.three{
+    color: red;
+    background-color: yellowgreen;
+    font-weight: bold;
+    font-size: 40px;
+}
+.styleone{
+    font-weight: bold;
+    font-size: 30px;
+}

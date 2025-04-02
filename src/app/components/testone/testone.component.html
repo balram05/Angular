@@ -1,0 +1,20 @@
+<p>testone works!</p>
+<button (click)="count()"> click me</button>
+<p>{{name}}</p>
+<button (click)="sum(10,20)">sum</button>
+
+<div>
+    <h3>counter App</h3>
+    <button (click)="handelChange('increment')">increment</button>
+    <h4>{{countNumber}}</h4>    
+    <button (click)="handelChange('decrement')">decrement</button>
+    <button (click)="handelChange('reset')">reset</button>
+</div>
+<div class="g-div">
+    <div class="box" style="background-color: red;" (click)="handelClick()">ClickMe</div>
+    <div class="box" style="background-color: green;" (mouseover)="handelOver()">MouseHover</div>
+    <div class="box" style="background-color: yellow;" (mouseout)="handelOut()">MouseOut</div>
+    <input type="text" placeholder="handelChange" (change)="HandelChange()">
+    <input type="text" placeholder="handelKeyUp" (keyup)="handelKeyUp()">
+    <input type="text" placeholder="handelKeyDown" (keydown)="handelkeyDown()">
+</div>

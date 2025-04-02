@@ -1,0 +1,86 @@
+<p>pipes works!</p>
+<div class="row">
+    <div class="col">
+        <!-- string pipes in angular -->
+        <div>
+            <!-- {{name | uppercase}}<br>
+            {{name | lowercase}}<br> -->
+            <!-- {{name | uppercase}}<br> -->
+            <!-- {{name | titlecase}}<br> -->
+            <!-- parametrized pipe -->
+            <!-- {{name | slice:2:5}}<br>
+
+            {{hero | json}} -->
+            <br>
+            <!-- <table border="1">
+
+                <tr>
+                    <th>Name</th>
+                    <th>Power</th>
+                    <th>City</th>
+                </tr>
+                @for(myhero of heroes; track myhero.id){
+                <tr>
+                    <td>{{myhero.name}}</td>
+                    <td>{{myhero.superpower}}</td>
+                    <td>{{myhero.city}}</td>
+                </tr>
+                }
+
+            </table> -->
+            <!-- decimal and percentage pipes-->
+            <!-- {{bigNumber}} -->
+            <!-- nun parametrized -->
+            <!-- <p>{{bigNumber | number}}</p> -->
+            <!-- parametrized -->
+            <!-- <p>{{bigNumber | number:'2.1-5'}}</p> -->
+            <!-- percentage pipe -->
+
+            <!-- {{value | percent}}<br>
+            {{value | percent:'2.1-2'}}
+
+            <p>{{ dateValue | date}}</p>
+
+            <p>{{ dateValue | date:'fullDate'}}</p> -->
+
+            <!-- <p>{{name | titlecase | slice}}</p> -->
+
+            <!-- currency pipes in angular -->
+            <p>{{value}}</p>
+            <p>{{value | currency}}</p>
+
+            <input type="text" value="" #inputValue (keyup)="getvalue(inputValue.value)">
+
+            <p>{{inputdata}}</p>
+            <!-- currency pipe with country code -->
+             <p>{{value | currency: 'INR'}}</p>
+             <p>{{value | currency: 'GBP'}}</p>
+             <p>{{value | currency: 'INR':'symbol'}}</p>
+             <p>{{value | currency: 'INR':'symbol':'1.1-1'}}</p>
+
+             <!-- date pipe in angular-->
+
+<p>{{currentDate}}</p>
+
+<p>{{currentDate | date:'fullDate'}}</p>
+
+<p>{{currentDate | date:'shortDate'}}</p>
+
+<p>{{currentDate | date:'mediumDate'}}</p>
+
+<p>{{currentDate | date:'medium'}}</p>
+
+<p>{{ currentDate | date: 'medium' : 'America/New_York' }}</p>
+
+<p>{{"ram" | pipe }}</p>
+
+        </div>
+
+    </div>
+    <div class="col">
+
+    </div>
+    <div class="col">
+
+    </div>
+</div>

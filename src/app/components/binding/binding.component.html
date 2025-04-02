@@ -1,0 +1,131 @@
+<p>binding works!</p>
+
+<!-- example for interpolation -->
+<div>
+   <div class="row">
+      <div class="col">
+         <p>{{vairable}}</p>
+         <div>
+            <!-- interpoliation with array -->
+            <div>
+               <!-- <div>
+   <h3>array elements without for</h3>
+         <p>{{myArray}}</p>
+
+         <h3>array elements with for</h3>
+         @for(arrayitem of myArray;track arrayitem){
+         <p>{{arrayitem}}</p> }
+
+</div> -->
+
+
+               <!-- interpolistion with array of oject -->
+               <!-- <div>
+            <h3>array of object with for</h3>
+            @for(items of myObject;track items.id){
+            <p>{{items.name}}</p>
+            }
+   
+   
+   
+            <button (click)="getCity()">change city</button>
+   
+            <p>{{"welcom to "+ city}}</p>
+   
+
+          </div> -->
+
+
+            </div>
+         </div>
+
+
+
+      </div>
+      <div class="col">
+         <!-- <div>
+
+            <p>Error handling in interpolation</p>
+
+         <p>using the logical and ternary operator</p>
+         <p>{{myObject1?myObject1.name:"no data"}}</p>
+
+         <p>{{myObject1 && myObject1.role}}</p>
+
+         </div> -->
+
+
+         <div>
+            <!-- class binding example -->
+            <!-- <div>
+               <h6 class="hello" [class]="classToApply"> class binding</h6>
+            <h6 [class]="classToApplymultiple"> class binding with mutiple styles through variables</h6>
+            <h6 [class.three]="true"> class binding class.styleClassName</h6>
+            <h6 [class.hello]="isTrue"> class binding class.styleClassName with variable</h6>
+               
+             </div> -->
+
+            <!-- class binding example -->
+         </div>
+         <div>
+            <!--style binding example-->
+            <!-- <div>
+               <h6 class="">style binding</h6>
+               <h6 [style.background-color]="color">style binding using a variable</h6>
+               <h6 [style.background-color]="color" [style.font-size.px]="'25'">style binding using a variable with bypass</h6>
+               <h6 [style.font-style]="isItalic ? 'italic':'normal'">style binding with conditional</h6>
+   
+            </div> -->
+
+            <!--style binding example-->
+
+
+         </div>
+
+      </div>
+
+      <div class="col">
+         <div>
+            <!--property binding-->
+            <!-- <div>
+               <button [disabled]="proPerty" (click)="disable()">hellow user</button>
+
+               <input type="text" [value]="inputValue" id="inputvalue" (keydown)="demo()">
+
+               <p>{{inputValue}}</p>
+               <h6>task button click</h6>
+
+               @if(displayButton===true){
+
+               <button (click)="buttonClick()" type="button">enable</button>
+               }@else{
+               <button (click)="buttonClick()" type="button">disable</button>
+               }
+               <br>
+               <button type="button" [disabled]="displayButton">tutton one</button>
+               <br>
+               <button type="button" [disabled]="displayButton">button two</button>
+            </div> -->
+            <!--property binding-->
+            <!-- <div>
+               <h6>event binding in anguler</h6>
+               <input type="text" #myvalue (keyup)="getData(myvalue.value)" >
+               <p>{{myinputValue}}</p>
+            </div> -->
+            <div>
+               <h6>two way data binding</h6>
+                
+               <h6>two way data binding without ngModel</h6>
+
+               <input type="text" #myTemp (keyup)="myFunction(myTemp.value)" [value]="'myVariable'">
+               {{myVariable}}
+               <h6>two way data ninding usin ngModel</h6>
+               <input type="text" [(ngModel)]="myVariable">
+            </div>
+         </div>
+ 
+      </div>
+
+   </div>
+
+   <!-- example for interpolation -->

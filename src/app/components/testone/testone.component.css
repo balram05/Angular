@@ -1,0 +1,10 @@
+.box{
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.g-div{
+    display: grid;
+    gap:10px;
+}

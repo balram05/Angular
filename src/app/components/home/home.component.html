@@ -1,0 +1,33 @@
+<p>home works!</p>
+<p>the name is {{ name }}</p>
+<div>
+  <p>by using the template refernces variable</p>
+  <input
+    type="text"
+    placeholder="enter name"
+    #inputValue
+    (change)="handleChange(inputValue.value)"
+  />
+
+  <h3>by using the property binding []</h3>
+  <p [innerHTML]="myName"></p>
+  <h3>by using the interpolation binding</h3>
+  <p>{{ myName }}</p>
+</div>
+
+<div>
+    <h3>two data binding</h3>
+<p>event binding + property binding -> ngModel = two way data binding</p>
+<br>
+<br>
+<!-- without using the [(ngMdel)] -->
+<input type="text" placeholder="enrter name" [value]="message"
+  #myMessage (keyup)="setMessage(myMessage.value)">
+<p>{{message}}</p>
+
+<br>
+<br>
+<!-- with using the [(ngModel)] -->
+<input type="text" [(ngModel)]="message">
+<p>{{message}}</p>
+</div>

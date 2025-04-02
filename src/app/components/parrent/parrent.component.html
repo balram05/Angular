@@ -1,0 +1,90 @@
+<!-- <p>parrent works!</p> -->
+<h1>welcome to parent component</h1>
+<!-- start example 1-->
+<!--parent to child communication using the meta data-->
+<!-- here  we  using the template vairable #myvalue -->
+<!-- <input type="text" #myvalue (keyup)="0">
+<br/>
+<br/>
+<span>in the parent component :{{myvalue.value}}</span> -->
+
+<!-- here we are using the property bilding  -->
+<!-- <app-chlidone [valuedata]="myvalue.value"></app-chlidone> -->
+<!-- end  example 1-->
+
+
+<!--start example 2-->
+<!-- child to parent communication  -->
+value for child to parent:{{datachild}}
+<app-childtwo (childdata)="setdata($event)"></app-childtwo>
+
+<!--end  example 2-->
+
+
+<!-- start example 3 -->
+<!-- using the ngIf  -->
+<h4 class="display">display content</h4>
+<h5 *ngIf="true">hello</h5>
+<h6 *ngIf="!isvalid">hello world</h6>
+
+<p>{{isvalid}}</p>
+
+@if(!isvalid){
+<div>
+    <button (click)="clicking()">click me</button>
+
+
+</div>
+}
+@else{
+<div>
+    <p>we in the else else block</p>
+</div>
+}
+<!-- end example 3 -->
+
+<!-- start example 4 -->
+<!-- using the @switch -->
+@switch(username){
+@case("balram"){
+<p>welcom {{username}}</p>
+}
+@case ("ram"){
+<p>welcom {{username}}</p>
+}
+@default{
+<p>no user found</p>
+}
+
+}
+<!-- end example 4 -->
+
+<!-- start example 5 -->
+<!-- <example for simple array> -->
+<!-- <p>{{arr}}</p>
+
+    
+ @for (item of arr;track item;let e=$event){
+    <ul>
+        <li>{{item}}</li>  
+    </ul>
+ }@empty{
+     <p>no data found</p>
+ } -->
+<!-- end example 5 -->
+
+<!-- start example 6 -->
+
+<!-- example for array of object -->
+ <p>{{student}}</p>
+
+ @for(item of student; let o=$odd;let e=$even;track item.id){
+    @if(e){
+        <ul>
+            <li>{{item.name}} | {{item.age}}</li>
+        </ul>
+    }
+    
+ }
+
+<!-- end example 6 -->

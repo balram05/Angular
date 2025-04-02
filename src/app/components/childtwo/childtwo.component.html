@@ -1,0 +1,22 @@
+<!-- <p>childtwo works!</p> -->
+ <h1>welcom to the childtwo component</h1>
+ 
+ <!-- start example 1 -->
+<!--here we are working on the child to parent communication using meta data-->
+in the child component: <input type="text" #childatavalue (keyup)="getdata(childatavalue.value)">
+ <!-- end example 1 -->
+
+    <!-- start example 2 -->    
+     <!-- using the ngClass -->
+        <!-- <h3 [ngClass]="'one two'">hello world </h3> -->
+
+        <!-- ng class using the array -->
+        <h3 [ngClass]="['three', 'two']">hello for ngClass array</h3>
+
+        <!-- ngclass using the object -->
+         <h4 [ngClass]="{'one': true, 'three': false}">hello for ngClass object</h4>  
+         
+         
+
+
+     <!--end example 2-->
